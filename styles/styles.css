@@ -225,6 +225,22 @@ main {
 }
 
 
+.footer-content {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    width: 1440px;
+    height: 100px;
+}
+
+.footer-content .fade-text {
+    padding-top: 39px;
+    text-align: center;
+}
+
+
 
 /* for responsive  */
 
@@ -245,6 +261,7 @@ main {
     .features-image {
         grid-template-columns: 1fr;
     }
+
     .features-content,
     .fact-card {
         padding-right: 20px;
@@ -261,16 +278,21 @@ main {
     }
 
     .ten-years {
-        
+
         position: static;
         max-width: 250px;
     }
 
-
-    
-
     .fact-card {
         gap: 20px;
+    }
+
+    .footer-content {
+        margin-bottom: 150px;
+        border-radius: 8px;
+        background: #FFF4E7;
+        height: 100px;
+        width: 100%;
     }
 
 
@@ -290,7 +312,9 @@ main {
     .features {
         flex-direction: column;
     }
-    .fact-card{
-        display: flex;
+
+    .footer-content {
+
+        width: 100%;
     }
 }
