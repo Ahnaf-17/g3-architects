@@ -134,6 +134,54 @@ main {
 
 }
 
+/* features info  */
+
+.feature-info {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+}
+
+.feature-info .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-info .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-info-img img {
+    height: 90%;
+    margin-left: 90px;
+}
+
+.ten-years {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFFFFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years h2 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.ten-years p {
+    font-size: 1.5rem;
+}
+
+
+
 .fact-card {
     display: flex;
     justify-content: space-around;
@@ -143,32 +191,36 @@ main {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
-    padding:  30px;
+    padding: 30px;
 }
-.fact-card .card-stats{
+
+.fact-card .card-stats {
     font-size: 2.8rem;
     columns: #424242;
     margin-top: 10px;
     margin-bottom: 10px;
 
 }
-.fact-card .card-title{
+
+.fact-card .card-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 5px;
 }
 
-.sponsors{
+.sponsors {
     text-align: center;
 }
-.sponsors-img{
+
+.sponsors-img {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 30px;
 }
-.sponsors-img img{
+
+.sponsors-img img {
     width: 165px;
 }
 
@@ -183,25 +235,44 @@ main {
         padding: 20px;
     }
 
-    nav, .fact-card, .sponsors-img{
+    nav,
+    .fact-card,
+    .feature-info,
+    .sponsors-img {
         flex-direction: column;
     }
 
     .features-image {
         grid-template-columns: 1fr;
     }
+    .features-content,
+    .fact-card {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .feature-info-img img {
+        width: 90%;
+        margin-left: 0;
+    }
 
     .features {
         flex-direction: column;
     }
-    .features-content , .fact-card{
-        padding-right: 20px;
-        padding-left: 20px;
+
+    .ten-years {
+        
+        position: static;
+        max-width: 250px;
     }
-    .fact-card{
+
+
+    
+
+    .fact-card {
         gap: 20px;
     }
-    
+
 
 
 }
@@ -214,8 +285,12 @@ main {
     }
 
     nav,
+    .feature-info,
     .sponsors-img,
     .features {
         flex-direction: column;
+    }
+    .fact-card{
+        display: flex;
     }
 }
